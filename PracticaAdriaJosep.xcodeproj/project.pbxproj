@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF47EBB22243D34D00282DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBB12243D34D00282DB6 /* AppDelegate.swift */; };
+		EF47EBB42243D34D00282DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBB32243D34D00282DB6 /* ViewController.swift */; };
+		EF47EBB72243D34D00282DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF47EBB52243D34D00282DB6 /* Main.storyboard */; };
+		EF47EBB92243D34F00282DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF47EBB82243D34F00282DB6 /* Assets.xcassets */; };
+		EF47EBBC2243D34F00282DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF47EBBA2243D34F00282DB6 /* LaunchScreen.storyboard */; };
+		EF47EBC52243E50A00282DB6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF47EBC42243E50A00282DB6 /* libsqlite3.tbd */; };
+		EF47EBE52243E60D00282DB6 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBDA2243E60C00282DB6 /* FMResultSet.m */; };
+		EF47EBE62243E60D00282DB6 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBDB2243E60C00282DB6 /* FMDatabaseQueue.m */; };
+		EF47EBE72243E60D00282DB6 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBDF2243E60D00282DB6 /* FMDatabaseAdditions.m */; };
+		EF47EBE82243E60D00282DB6 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBE02243E60D00282DB6 /* FMDatabasePool.m */; };
+		EF47EBE92243E60D00282DB6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBE32243E60D00282DB6 /* FMDatabase.m */; };
+		EFFA68CD224931BA0074EA70 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68CC224931BA0074EA70 /* Book.swift */; };
+		EFFA68CF224935FC0074EA70 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68CE224935FC0074EA70 /* BookManager.swift */; };
+		EFFA68D12249363F0074EA70 /* SQLiteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF47EBAE2243D34D00282DB6 /* PracticaAdriaJosep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaAdriaJosep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF47EBB12243D34D00282DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF47EBB32243D34D00282DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF47EBB62243D34D00282DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF47EBB82243D34F00282DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF47EBBB2243D34F00282DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF47EBBD2243D34F00282DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF47EBC42243E50A00282DB6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EF47EBD92243E60B00282DB6 /* PracticaAdriaJosep-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PracticaAdriaJosep-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF47EBDA2243E60C00282DB6 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EF47EBDB2243E60C00282DB6 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EF47EBDC2243E60C00282DB6 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EF47EBDD2243E60D00282DB6 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EF47EBDE2243E60D00282DB6 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EF47EBDF2243E60D00282DB6 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EF47EBE02243E60D00282DB6 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EF47EBE12243E60D00282DB6 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EF47EBE22243E60D00282DB6 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		EF47EBE32243E60D00282DB6 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EF47EBE42243E60D00282DB6 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EFFA68CC224931BA0074EA70 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		EFFA68CE224935FC0074EA70 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
+		EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDAO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF47EBAB2243D34D00282DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF47EBC52243E50A00282DB6 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF47EBA52243D34D00282DB6 = {
+			isa = PBXGroup;
+			children = (
+				EF47EBB02243D34D00282DB6 /* PracticaAdriaJosep */,
+				EF47EBAF2243D34D00282DB6 /* Products */,
+				EF47EBC32243E50A00282DB6 /* Frameworks */,
+				EF47EBD92243E60B00282DB6 /* PracticaAdriaJosep-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		EF47EBAF2243D34D00282DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF47EBAE2243D34D00282DB6 /* PracticaAdriaJosep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF47EBB02243D34D00282DB6 /* PracticaAdriaJosep */ = {
+			isa = PBXGroup;
+			children = (
+				EF47EBEA2243E61900282DB6 /* fmdb */,
+				EF47EBB12243D34D00282DB6 /* AppDelegate.swift */,
+				EF47EBB32243D34D00282DB6 /* ViewController.swift */,
+				EF47EBB52243D34D00282DB6 /* Main.storyboard */,
+				EF47EBB82243D34F00282DB6 /* Assets.xcassets */,
+				EF47EBBA2243D34F00282DB6 /* LaunchScreen.storyboard */,
+				EF47EBBD2243D34F00282DB6 /* Info.plist */,
+				EFFA68CC224931BA0074EA70 /* Book.swift */,
+				EFFA68CE224935FC0074EA70 /* BookManager.swift */,
+				EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */,
+			);
+			path = PracticaAdriaJosep;
+			sourceTree = "<group>";
+		};
+		EF47EBC32243E50A00282DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF47EBC42243E50A00282DB6 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF47EBEA2243E61900282DB6 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				EF47EBE42243E60D00282DB6 /* FMDatabaseQueue.h */,
+				EF47EBDB2243E60C00282DB6 /* FMDatabaseQueue.m */,
+				EF47EBE22243E60D00282DB6 /* FMDB.h */,
+				EF47EBE12243E60D00282DB6 /* FMResultSet.h */,
+				EF47EBDA2243E60C00282DB6 /* FMResultSet.m */,
+				EF47EBDE2243E60D00282DB6 /* FMDatabase.h */,
+				EF47EBE32243E60D00282DB6 /* FMDatabase.m */,
+				EF47EBDC2243E60C00282DB6 /* FMDatabaseAdditions.h */,
+				EF47EBDF2243E60D00282DB6 /* FMDatabaseAdditions.m */,
+				EF47EBDD2243E60D00282DB6 /* FMDatabasePool.h */,
+				EF47EBE02243E60D00282DB6 /* FMDatabasePool.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF47EBAD2243D34D00282DB6 /* PracticaAdriaJosep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF47EBC02243D34F00282DB6 /* Build configuration list for PBXNativeTarget "PracticaAdriaJosep" */;
+			buildPhases = (
+				EF47EBAA2243D34D00282DB6 /* Sources */,
+				EF47EBAB2243D34D00282DB6 /* Frameworks */,
+				EF47EBAC2243D34D00282DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PracticaAdriaJosep;
+			productName = PracticaAdriaJosep;
+			productReference = EF47EBAE2243D34D00282DB6 /* PracticaAdriaJosep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF47EBA62243D34D00282DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Manolo Corporation";
+				TargetAttributes = {
+					EF47EBAD2243D34D00282DB6 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = EF47EBA92243D34D00282DB6 /* Build configuration list for PBXProject "PracticaAdriaJosep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF47EBA52243D34D00282DB6;
+			productRefGroup = EF47EBAF2243D34D00282DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF47EBAD2243D34D00282DB6 /* PracticaAdriaJosep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF47EBAC2243D34D00282DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF47EBBC2243D34F00282DB6 /* LaunchScreen.storyboard in Resources */,
+				EF47EBB92243D34F00282DB6 /* Assets.xcassets in Resources */,
+				EF47EBB72243D34D00282DB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF47EBAA2243D34D00282DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFA68CD224931BA0074EA70 /* Book.swift in Sources */,
+				EF47EBE52243E60D00282DB6 /* FMResultSet.m in Sources */,
+				EFFA68D12249363F0074EA70 /* SQLiteDAO.swift in Sources */,
+				EF47EBE82243E60D00282DB6 /* FMDatabasePool.m in Sources */,
+				EFFA68CF224935FC0074EA70 /* BookManager.swift in Sources */,
+				EF47EBE62243E60D00282DB6 /* FMDatabaseQueue.m in Sources */,
+				EF47EBE92243E60D00282DB6 /* FMDatabase.m in Sources */,
+				EF47EBB42243D34D00282DB6 /* ViewController.swift in Sources */,
+				EF47EBB22243D34D00282DB6 /* AppDelegate.swift in Sources */,
+				EF47EBE72243E60D00282DB6 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF47EBB52243D34D00282DB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF47EBB62243D34D00282DB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF47EBBA2243D34F00282DB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF47EBBB2243D34F00282DB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF47EBBE2243D34F00282DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF47EBBF2243D34F00282DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF47EBC12243D34F00282DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PracticaAdriaJosep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Man-Co..PracticaAdriaJosep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PracticaAdriaJosep-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF47EBC22243D34F00282DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PracticaAdriaJosep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Man-Co..PracticaAdriaJosep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PracticaAdriaJosep-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF47EBA92243D34D00282DB6 /* Build configuration list for PBXProject "PracticaAdriaJosep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF47EBBE2243D34F00282DB6 /* Debug */,
+				EF47EBBF2243D34F00282DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF47EBC02243D34F00282DB6 /* Build configuration list for PBXNativeTarget "PracticaAdriaJosep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF47EBC12243D34F00282DB6 /* Debug */,
+				EF47EBC22243D34F00282DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF47EBA62243D34D00282DB6 /* Project object */;
+}

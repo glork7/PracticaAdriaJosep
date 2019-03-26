@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ViewController: UITableViewController, UISplitViewControllerDelegate {
     
     let dataBaseFilename = "books.db"
     var dataBasePath:String?
@@ -19,6 +19,14 @@ class ViewController: UITableViewController {
         setTableDatabase()
         saveData()
         
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.splitViewController?.delegate = self
+    }
+    
+    @IBAction func goBack(segue: UIStoryboardSegue){
         
     }
     
@@ -90,6 +98,8 @@ class ViewController: UITableViewController {
         }
         return cell
     }
+    
+    
     
     
     

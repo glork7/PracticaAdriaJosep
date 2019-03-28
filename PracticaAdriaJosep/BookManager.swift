@@ -10,10 +10,16 @@ import UIKit
 
 class BookManager: SQLiteDAO {
     
-    
+    var title:String = "LLIBRE1"
+    var autor:String = "LLIBRE2"
+    var ISBN:Int = 12334566
     var bookArray: [Book]=[Book]()
+  
     
-    func readRecords(_ database: FMDatabase) {
+    
+  
+    
+    func readRecords(_ database: FMDatabase){
         bookArray.removeAll()
         if database.open(){
             let selectSQL="SELECT * FROM BOOKS"
@@ -41,6 +47,19 @@ class BookManager: SQLiteDAO {
             }else{
                 database.close()
 
+            }
+        }
+    }
+    
+    func insertTest(_ database: FMDatabase) {
+        if database.open(){
+            let insertSQL="INSERT INTO BOOKS(ISBN,AUTOR,TITOL) VALUES (?,?,?)"
+            let data:Array = ["Book1","AAA","123141"]
+            if !database.executeUpdate(insertSQL, withArgumentsIn: data){
+                print(database.lastError().localizedDescription)
+            }else{
+                database.close()
+                
             }
         }
     }

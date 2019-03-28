@@ -13,7 +13,7 @@
         <!--BookList-->
         <scene sceneID="mLt-Rc-1mp">
             <objects>
-                <tableViewController id="caZ-E0-xyx" customClass="ViewController" customModule="PracticaAdriaJosep" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="caZ-E0-xyx" customClass="BookTableTableViewController" customModule="PracticaAdriaJosep" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qnp-Up-ZgT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,12 +109,12 @@
                     <navigationItem key="navigationItem" title="New Book" id="65f-95-FEs">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="HdD-iY-fpw">
                             <connections>
-                                <segue destination="rfK-bo-Pyn" kind="unwind" unwindAction="goBackWithSegue:" id="muH-jZ-URx"/>
+                                <segue destination="rfK-bo-Pyn" kind="unwind" unwindAction="goBackWithSegue:" id="zz7-7i-KEK"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="WMz-QD-xVy">
                             <connections>
-                                <segue destination="rfK-bo-Pyn" kind="unwind" unwindAction="goBackWithSegue:" id="Iwd-6f-mkW"/>
+                                <segue destination="rfK-bo-Pyn" kind="unwind" identifier="Save Segue" unwindAction="goBackWithSegue:" id="Dxf-so-e0O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

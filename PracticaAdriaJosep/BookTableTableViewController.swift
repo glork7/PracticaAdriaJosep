@@ -15,18 +15,23 @@ class BookTableTableViewController: UITableViewController,UISplitViewControllerD
     var dataBasePath:String?
     var bookDB:FMDatabase?
     var bookToAdd:Book?
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setTableDatabase()
-        bookManager.readRecords(bookDB!)
-
     }
     
     @IBAction func goBack(segue: UIStoryboardSegue){
         if let add = bookToAdd{
-            bookManager.insert(bookDB!,newRecord: add)
-            print(add.Autor)
+            
+            if(!bookManager.bookisbn.contains(add.ISBN)){
+                bookManager.insert(bookDB!,newRecord: add)
+            }else{
+                
+            }
+            bookManager.readRecords(bookDB!)
+            tableView.reloadData()
         }
         
     }
@@ -70,7 +75,8 @@ class BookTableTableViewController: UITableViewController,UISplitViewControllerD
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        //bookManager.readRecords(bookDB!)
+        bookManager.readRecords(bookDB!)
+        tableView.reloadData()
         
         
     }
@@ -96,5 +102,28 @@ class BookTableTableViewController: UITableViewController,UISplitViewControllerD
         cell.detailTextLabel?.text = "\(item.Titol)"
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        bookDB = FMDatabase(path: dataBasePath)
+        if editingStyle == .delete{
+            bookManager.delete(bookDB!, recordDelte: bookManager.bookArray[indexPath.row])
+             bookManager.readRecords(bookDB!)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tableSegue" {
+            if let cell = sender as? UITableViewCell,
+                let indexPath = tableView.indexPath(for: cell)
+            {
+                if let destinationBookDetailController = segue.destination as? UINavigationController,
+                    let targetController = destinationBookDetailController.topViewController as? BookDetailViewController {
+                    targetController.bookDetail = bookManager.bookArray[indexPath.row]
+                }
+            }
+        }
+    
     }
 }

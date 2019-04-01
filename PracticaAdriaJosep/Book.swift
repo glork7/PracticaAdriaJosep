@@ -9,12 +9,12 @@
 import Foundation
 
 class Book{
-    var ISBN:Int
+    var ISBN:String
     var Autor:String
     var Titol:String
     
     
-    init(ISBN: Int, autor:String, titol:String){
+    init(ISBN: String, autor:String, titol:String){
         self.ISBN = ISBN
         self.Autor = autor
         self.Titol = titol

@@ -27,7 +27,7 @@ class AddNewBookController: UIViewController {
         if segue.identifier == "Save Segue"{
             if let btvc = segue.destination as? BookTableTableViewController{
                 
-                        book = Book.init(ISBN: Int(self.newISBNBookField.text!)!, autor: self.newAutorBookField.text!, titol: self.newTitleBookField.text!)
+                        book = Book.init(ISBN: self.newISBNBookField.text!, autor: self.newAutorBookField.text!, titol: self.newTitleBookField.text!)
                         btvc.bookToAdd = book
                     }
                 }

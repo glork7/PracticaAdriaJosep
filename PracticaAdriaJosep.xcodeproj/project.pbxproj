@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EF2A8485224D0EEA00BFC1CE /* BookTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A8484224D0EEA00BFC1CE /* BookTableTableViewController.swift */; };
 		EF47EBB22243D34D00282DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBB12243D34D00282DB6 /* AppDelegate.swift */; };
-		EF47EBB42243D34D00282DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBB32243D34D00282DB6 /* ViewController.swift */; };
 		EF47EBB72243D34D00282DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF47EBB52243D34D00282DB6 /* Main.storyboard */; };
 		EF47EBB92243D34F00282DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF47EBB82243D34F00282DB6 /* Assets.xcassets */; };
 		EF47EBBC2243D34F00282DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF47EBBA2243D34F00282DB6 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		EF47EBE82243E60D00282DB6 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBE02243E60D00282DB6 /* FMDatabasePool.m */; };
 		EF47EBE92243E60D00282DB6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBE32243E60D00282DB6 /* FMDatabase.m */; };
 		EF5396F4224AB122003C603B /* AddNewBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5396F3224AB122003C603B /* AddNewBookController.swift */; };
+		EF69343C225251FB00E17ECA /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF69343B225251FB00E17ECA /* BookDetailViewController.swift */; };
 		EFFA68CD224931BA0074EA70 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68CC224931BA0074EA70 /* Book.swift */; };
 		EFFA68CF224935FC0074EA70 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68CE224935FC0074EA70 /* BookManager.swift */; };
 		EFFA68D12249363F0074EA70 /* SQLiteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */; };
@@ -29,7 +29,6 @@
 		EF2A8484224D0EEA00BFC1CE /* BookTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableTableViewController.swift; sourceTree = "<group>"; };
 		EF47EBAE2243D34D00282DB6 /* PracticaAdriaJosep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaAdriaJosep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF47EBB12243D34D00282DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF47EBB32243D34D00282DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF47EBB62243D34D00282DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF47EBB82243D34F00282DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF47EBBB2243D34F00282DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		EF47EBE32243E60D00282DB6 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		EF47EBE42243E60D00282DB6 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		EF5396F3224AB122003C603B /* AddNewBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookController.swift; sourceTree = "<group>"; };
+		EF69343B225251FB00E17ECA /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		EFFA68CC224931BA0074EA70 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		EFFA68CE224935FC0074EA70 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
 		EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDAO.swift; sourceTree = "<group>"; };
@@ -89,15 +89,15 @@
 				EF47EBEA2243E61900282DB6 /* fmdb */,
 				EF47EBB12243D34D00282DB6 /* AppDelegate.swift */,
 				EF5396F3224AB122003C603B /* AddNewBookController.swift */,
-				EF47EBB32243D34D00282DB6 /* ViewController.swift */,
 				EF47EBB52243D34D00282DB6 /* Main.storyboard */,
 				EF47EBB82243D34F00282DB6 /* Assets.xcassets */,
 				EF47EBBA2243D34F00282DB6 /* LaunchScreen.storyboard */,
 				EF47EBBD2243D34F00282DB6 /* Info.plist */,
 				EFFA68CC224931BA0074EA70 /* Book.swift */,
 				EFFA68CE224935FC0074EA70 /* BookManager.swift */,
-				EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */,
 				EF2A8484224D0EEA00BFC1CE /* BookTableTableViewController.swift */,
+				EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */,
+				EF69343B225251FB00E17ECA /* BookDetailViewController.swift */,
 			);
 			path = PracticaAdriaJosep;
 			sourceTree = "<group>";
@@ -203,12 +203,12 @@
 				EF5396F4224AB122003C603B /* AddNewBookController.swift in Sources */,
 				EFFA68CD224931BA0074EA70 /* Book.swift in Sources */,
 				EF47EBE52243E60D00282DB6 /* FMResultSet.m in Sources */,
+				EF69343C225251FB00E17ECA /* BookDetailViewController.swift in Sources */,
 				EFFA68D12249363F0074EA70 /* SQLiteDAO.swift in Sources */,
 				EF47EBE82243E60D00282DB6 /* FMDatabasePool.m in Sources */,
 				EFFA68CF224935FC0074EA70 /* BookManager.swift in Sources */,
 				EF47EBE62243E60D00282DB6 /* FMDatabaseQueue.m in Sources */,
 				EF47EBE92243E60D00282DB6 /* FMDatabase.m in Sources */,
-				EF47EBB42243D34D00282DB6 /* ViewController.swift in Sources */,
 				EF47EBB22243D34D00282DB6 /* AppDelegate.swift in Sources */,
 				EF47EBE72243E60D00282DB6 /* FMDatabaseAdditions.m in Sources */,
 				EF2A8485224D0EEA00BFC1CE /* BookTableTableViewController.swift in Sources */,

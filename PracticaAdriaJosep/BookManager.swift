@@ -9,11 +9,9 @@
 import UIKit
 
 class BookManager: SQLiteDAO {
-    
-    var title:String = "LLIBRE1"
-    var autor:String = "LLIBRE2"
-    var ISBN:Int = 12334566
+
     var bookArray: [Book]=[Book]()
+    var bookisbn: [String] = []
   
     
     
@@ -21,13 +19,15 @@ class BookManager: SQLiteDAO {
     
     func readRecords(_ database: FMDatabase){
         bookArray.removeAll()
+        bookisbn.removeAll()
         if database.open(){
             let selectSQL="SELECT * FROM BOOKS"
             let data:[Any]=[Any]()
             if let resultSet = database.executeQuery(selectSQL, withArgumentsIn: data){
                 while(resultSet.next()){
-                    let book = Book(ISBN:Int(resultSet.int(forColumnIndex: 0)), autor: resultSet.string(forColumnIndex: 1)!, titol: resultSet.string(forColumnIndex: 2)!)
+                    let book = Book(ISBN:resultSet.string(forColumnIndex: 0)!, autor: resultSet.string(forColumnIndex: 1)!, titol: resultSet.string(forColumnIndex: 2)!)
                     bookArray.append(book)
+                    bookisbn.append(book.ISBN)
                 }
                 resultSet.close()
             }
@@ -51,18 +51,22 @@ class BookManager: SQLiteDAO {
         }
     }
     
-    func insertTest(_ database: FMDatabase) {
+    func delete(_ database: FMDatabase, recordDelte recordToDelete: Any) -> Bool{
+        var result = false
         if database.open(){
-            let insertSQL="INSERT INTO BOOKS(ISBN,AUTOR,TITOL) VALUES (?,?,?)"
-            let data:Array = ["Book1","AAA","123141"]
-            if !database.executeUpdate(insertSQL, withArgumentsIn: data){
-                print(database.lastError().localizedDescription)
-            }else{
-                database.close()
-                
+            let deleteSQL = "DELETE FROM BOOKS WHERE ISBN=?"
+            if let book = recordToDelete as? Book{
+                let data:[Any]=["\(book.ISBN)"]
+                result = database.executeUpdate(deleteSQL, withArgumentsIn: data)
             }
+            database.close()
+            
+        }else{
+             print(database.lastError().localizedDescription)
         }
+        return result
     }
+    
 }
 
 

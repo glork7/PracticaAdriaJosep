@@ -10,7 +10,7 @@ import Foundation
 
 protocol SQLiteDAO {
     func insert(_ database:FMDatabase, newRecord: Any)
-    //func delete(_ database:FMDatabase, recordDelte: Any) ->Bool
+    func delete(_ database:FMDatabase, recordDelte: Any) ->Bool
     func readRecords(_ database:FMDatabase)
 }
 

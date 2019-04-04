@@ -64,11 +64,11 @@ class BookTableTableViewController: UITableViewController,UISplitViewControllerD
             bookDB = FMDatabase(path: dataBasePath)
             if (bookDB?.open())!{
                 if !bookDB!.executeStatements("CREATE TABLE IF NOT EXISTS BOOKS(ISBN TEXT PRIMARY KEY, AUTOR TEXT NOT NULL, TITOL TEXT NOT NULL)"){
-                    print(bookDB?.lastError().localizedDescription)
+                    print(bookDB?.lastError().localizedDescription as Any)
                 }
                 bookDB?.close()
             }else{
-                print(bookDB?.lastError().localizedDescription)
+                print(bookDB?.lastError().localizedDescription as Any)
             }
         }
         
@@ -77,8 +77,6 @@ class BookTableTableViewController: UITableViewController,UISplitViewControllerD
     override func viewWillAppear(_ animated: Bool) {
         bookManager.readRecords(bookDB!)
         tableView.reloadData()
-        
-        
     }
     
     

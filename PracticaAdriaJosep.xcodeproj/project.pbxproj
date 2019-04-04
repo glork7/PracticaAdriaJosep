@@ -20,6 +20,7 @@
 		EF47EBE92243E60D00282DB6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF47EBE32243E60D00282DB6 /* FMDatabase.m */; };
 		EF5396F4224AB122003C603B /* AddNewBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5396F3224AB122003C603B /* AddNewBookController.swift */; };
 		EF69343C225251FB00E17ECA /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF69343B225251FB00E17ECA /* BookDetailViewController.swift */; };
+		EFEB418122565A7A001C9AA7 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = EFEB418022565A7A001C9AA7 /* book.png */; };
 		EFFA68CD224931BA0074EA70 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68CC224931BA0074EA70 /* Book.swift */; };
 		EFFA68CF224935FC0074EA70 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68CE224935FC0074EA70 /* BookManager.swift */; };
 		EFFA68D12249363F0074EA70 /* SQLiteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */; };
@@ -48,6 +49,7 @@
 		EF47EBE42243E60D00282DB6 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		EF5396F3224AB122003C603B /* AddNewBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookController.swift; sourceTree = "<group>"; };
 		EF69343B225251FB00E17ECA /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		EFEB418022565A7A001C9AA7 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
 		EFFA68CC224931BA0074EA70 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		EFFA68CE224935FC0074EA70 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
 		EFFA68D02249363F0074EA70 /* SQLiteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDAO.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				EF5396F3224AB122003C603B /* AddNewBookController.swift */,
 				EF47EBB52243D34D00282DB6 /* Main.storyboard */,
 				EF47EBB82243D34F00282DB6 /* Assets.xcassets */,
+				EFEB418022565A7A001C9AA7 /* book.png */,
 				EF47EBBA2243D34F00282DB6 /* LaunchScreen.storyboard */,
 				EF47EBBD2243D34F00282DB6 /* Info.plist */,
 				EFFA68CC224931BA0074EA70 /* Book.swift */,
@@ -189,6 +192,7 @@
 			files = (
 				EF47EBBC2243D34F00282DB6 /* LaunchScreen.storyboard in Resources */,
 				EF47EBB92243D34F00282DB6 /* Assets.xcassets in Resources */,
+				EFEB418122565A7A001C9AA7 /* book.png in Resources */,
 				EF47EBB72243D34D00282DB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

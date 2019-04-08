@@ -122,6 +122,5 @@ class BookTableTableViewController: UITableViewController,UISplitViewControllerD
                 }
             }
         }
-    
     }
 }

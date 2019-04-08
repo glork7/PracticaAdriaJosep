@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="dKC-3C-Dpf" kind="showDetail" identifier="tableSegue" id="hFY-cl-Laq"/>
+                                    <segue destination="dKC-3C-Dpf" kind="showDetail" identifier="tableSegue" trigger="accessoryAction" id="33y-Bm-3kj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -299,6 +299,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hFY-cl-Laq"/>
+        <segue reference="33y-Bm-3kj"/>
     </inferredMetricsTieBreakers>
 </document>

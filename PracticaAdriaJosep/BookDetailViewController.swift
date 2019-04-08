@@ -25,6 +25,10 @@ class BookDetailViewController: UIViewController,UISplitViewControllerDelegate  
             self.titleDetail.text = currentBook.Titol
             self.authorDetail.text = currentBook.Autor
             self.isbnDetail.text = currentBook.ISBN
+        }else {
+            self.titleDetail.text = ""
+            self.authorDetail.text = ""
+            self.isbnDetail.text = ""
         }
         
     }

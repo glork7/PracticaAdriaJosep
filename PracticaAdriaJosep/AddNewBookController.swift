@@ -22,17 +22,19 @@ class AddNewBookController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if((newTitleBookField.text!) != ""){
-            if((newAutorBookField.text!) != ""){
-                if((newISBNBookField.text!) != ""){
-                    self.book = Book.init(ISBN: self.newISBNBookField.text!, autor: self.newAutorBookField.text!, titol: self.newTitleBookField.text!)
-                    return true
+        if identifier  == "Save Segue" {
+            if((newTitleBookField.text!) != ""){
+                if((newAutorBookField.text!) != ""){
+                    if((newISBNBookField.text!) != ""){
+                        self.book = Book.init(ISBN: self.newISBNBookField.text!, autor: self.newAutorBookField.text!, titol: self.newTitleBookField.text!)
+                        return true
+                    }
                 }
-                
             }
-            
+            return false
         }
-        return false
+        return true
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,13 +43,6 @@ class AddNewBookController: UIViewController {
                 
                             btvc.bookToAdd = self.book
                         }
-            
-            
-            
-        }
-        if segue.identifier == "cancel segue"{
-            if let btvc = segue.destination as? BookTableTableViewController{
-            }
             
             
             
